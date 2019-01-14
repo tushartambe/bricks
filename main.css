@@ -10,3 +10,13 @@
   position: absolute;
   background-color: black;
 }
+.ball {
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+}
+.brick {
+  border: 1px solid black;
+  background-color: blue;
+  position: absolute;
+}
