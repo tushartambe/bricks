@@ -22,10 +22,10 @@ const moveBall = function(document, game) {
     drawBall(document, game.ball);
     game.checkCollisionBrick();
     destroyBrick(document, game);
-  }, 50);
+  }, 40);
 };
 
-const drawPaddle = function(document, paddle, ball) {
+const drawPaddle = function(document, paddle) {
   let paddleDiv = document.getElementById("paddle_1");
 
   paddleDiv.style.width = addPixelSuffix(paddle.width);

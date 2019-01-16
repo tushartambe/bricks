@@ -100,18 +100,18 @@ class Bricks {
 
   createBricks() {
     let bricks = [];
-    let brickWidth = 90;
-    let left = 5;
-    let bottom = this.height - 15;
-    for (let rows = 1; rows < 10; rows++) {
-      for (let column = 1; column < 11; column++) {
+    let brickWidth = 103;
+    let left = 15;
+    let bottom = this.height - 30;
+    for (let rows = 1; rows < 8; rows++) {
+      for (let column = 1; column < 9; column++) {
         let brickId = `brick_${column}_${rows}`;
-        let brick = new Brick(brickWidth, 15, left, bottom, brickId);
+        let brick = new Brick(brickWidth, 30, left, bottom, brickId);
         bricks.push(brick);
-        left = left + brickWidth + 5;
+        left = left + brickWidth + 15;
       }
-      left = 5;
-      bottom = bottom - 20;
+      left = 15;
+      bottom = bottom - 40;
     }
     return bricks;
   }
